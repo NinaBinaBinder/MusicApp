@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1709047187157,
+      "tag": "0000_daffy_micromax",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1709050092834,
+      "tag": "0001_blushing_calypso",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1709053350146,
+      "tag": "0002_careful_nuke",
+      "breakpoints": true
+    }
+  ]
+}
