@@ -31,5 +31,5 @@ export async function deleteAlbum(id:number){
 }
 
 export async function deleteSong(id:number){
-    await db.delete(songsTable).where(eq(songsTable.albumId, id))
+    await db.delete(songsTable).where(eq(songsTable.id, id))
 }

@@ -3,8 +3,11 @@ import { getAlbums } from "@/actions";
 import AddAlbum from "@/components/AddAlbum";
 import { AlbumCard } from "@/components/Card";
 
-
+ export const dynamic = "force-dynamic"
+ 
 export default async function Home() {
+
+ 
 
   const albums = await getAlbums()
   return (

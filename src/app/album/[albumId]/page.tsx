@@ -2,12 +2,15 @@ import { getAlbums, getSongs } from "@/actions";
 import AddSong from "@/components/AddSong";
 import { SongCard } from "@/components/Card";
 import EditAlbum from "@/components/EditAlbum";
-import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
+
+
 
 export type AlbumPageParams = {
   params: { albumId: string };
 };
+
+export const dynamic = "force-dynamic"
 
 export default async function albumPage({
   params: { albumId },
