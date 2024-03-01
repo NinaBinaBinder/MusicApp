@@ -24,20 +24,20 @@ export function DeleteAlbum({ id }: { id: number }) {
 }
 
 export function DeleteSong({ id }: { id: number }) {
-    const router = useRouter();
-  
-    async function handleDelete() {
-      await deleteSong(id);
-      router.refresh();
-      toast.success("delete successful uwu");
-    }
-  
-    return (
-      <button
-        onClick={handleDelete}
-        className="rounded hover:bg-red-600 text-xs hover:text-gray-50 h-7 w-16"
-      >
-        delete
-      </button>
-    );
+  const router = useRouter();
+
+  async function handleDelete() {
+    await deleteSong(id);
+    router.refresh();
+    toast.success("delete successful uwu");
   }
+
+  return (
+    <button
+      onClick={handleDelete}
+      className="rounded hover:bg-red-600 text-xs hover:text-gray-50 h-7 w-16"
+    >
+      delete
+    </button>
+  );
+}

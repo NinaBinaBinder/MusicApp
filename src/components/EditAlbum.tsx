@@ -16,10 +16,10 @@ export default function EditAlbum({ album }: { album: Album }) {
   const router = useRouter();
 
   async function handleAdd() {
-    setButton(!button)
+    setButton(!button);
     if (title.length < 3 || artist.length < 3) {
       toast.error(
-        "please enter valid album, inputs cannot be shorter than 3 lol"
+        "please enter valid album, inputs cannot be shorter than 3 lol",
       );
     } else {
       try {

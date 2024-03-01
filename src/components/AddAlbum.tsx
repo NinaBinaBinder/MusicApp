@@ -16,7 +16,7 @@ export default function AddAlbum() {
   async function handleAdd() {
     if (title.length < 3 || artist.length < 3) {
       toast.error(
-        "please enter valid album, inputs cannot be shorter than 3 lol"
+        "please enter valid album, inputs cannot be shorter than 3 lol",
       );
     } else {
       try {
@@ -44,14 +44,20 @@ export default function AddAlbum() {
         id="artist"
         className="rounded m-2 p-2"
       />
-      <select className="rounded m-2 p-2"
-      onChange={(e) => setGenre(e.currentTarget.value)} value={genre}>
+      <select
+        className="rounded m-2 p-2"
+        onChange={(e) => setGenre(e.currentTarget.value)}
+        value={genre}
+      >
         {genres.map((genre: string) => (
           <option key={genre.indexOf(genre)}>{genre}</option>
         ))}
       </select>
-      <button type="button" onClick={handleAdd}
-      className="text-center m-auto p-3 rounded-full bg-blue-500 text-white hover:bg-blue-600">
+      <button
+        type="button"
+        onClick={handleAdd}
+        className="text-center m-auto p-3 rounded-full bg-blue-500 text-white hover:bg-blue-600"
+      >
         add Album
       </button>
     </form>

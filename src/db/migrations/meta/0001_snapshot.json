@@ -73,12 +73,8 @@
           "name": "songsTable_albumId_albumsTable_id_fk",
           "tableFrom": "songsTable",
           "tableTo": "albumsTable",
-          "columnsFrom": [
-            "albumId"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["albumId"],
+          "columnsTo": ["id"],
           "onDelete": "no action",
           "onUpdate": "no action"
         }

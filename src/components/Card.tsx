@@ -11,7 +11,6 @@ export function AlbumCard({ album }: { album: Album }) {
         {album.title}
       </Link>
 
-
       <p>by {album.artist}</p>
       <p>{album.genre}</p>
     </div>
