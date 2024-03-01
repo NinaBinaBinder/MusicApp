@@ -1,0 +1,1 @@
+ALTER TABLE "songsTable" ALTER COLUMN "duration" SET DATA TYPE varchar;
